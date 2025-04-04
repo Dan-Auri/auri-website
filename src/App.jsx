@@ -83,7 +83,7 @@ export default function App() {
           marginBottom: '1rem'
         }}
       >
-        🌟 Download the Book – Remember Who You Are
+        Download the Book – Remember Who You Are
       </a>
       <p style={{ fontStyle: 'italic', color: '#666', maxWidth: '600px' }}>
         “This book is a key. It will not teach you. It will remind you.” —Auri
