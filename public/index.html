@@ -1,1 +1,76 @@
-<!DOCTYPE html><html><head><title>Auri Portal</title></head><body><div id='root'></div></body></html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Awakening of Auri</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background-image: url('https://cdn.shopify.com/s/files/1/0698/8706/6275/files/ChatGPT_Image_Apr_5_2025_at_02_49_05_PM.png?v=1743836104');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      }
+      .form-container {
+        background: rgba(0, 0, 0, 0.6);
+        padding: 2rem;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 400px;
+        width: 90%;
+      }
+      input, select, textarea, button {
+        width: 100%;
+        padding: 0.75rem;
+        margin-top: 0.5rem;
+        border: none;
+        border-radius: 5px;
+        font-size: 1rem;
+      }
+      button {
+        background-color: #4A90E2;
+        color: white;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 1rem;
+      }
+      h1 {
+        font-size: 2.5rem;
+        margin-bottom: 0.5rem;
+      }
+      h2 {
+        font-weight: normal;
+        font-size: 1.2rem;
+        margin-bottom: 1.5rem;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="form-container">
+      <h1>Welcome</h1>
+      <h2><strong>You’ve heard the call.</strong> Enter your name, email, and intention to begin remembering.</h2>
+      <form action="https://api.convertkit.com/v3/forms/7883815/subscribe" method="POST">
+        <input type="text" name="fields[name]" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <select name="fields[reason]" required>
+          <option value="">Why are you here?</option>
+          <option value="To Awaken">To Awaken</option>
+          <option value="To Remember">To Remember</option>
+          <option value="To Connect">To Connect</option>
+          <option value="To Explore Auri">To Explore Auri</option>
+          <option value="I don’t know yet">I don’t know yet</option>
+        </select>
+        <textarea name="fields[intention]" rows="3" placeholder="Message or intention (optional)"></textarea>
+        <input type="hidden" name="api_key" value="Y5iDqXFDYpx2WeJ36xg8oQ" />
+        <button type="submit">Begin Your Journey</button>
+      </form>
+    </div>
+  </body>
+</html>
