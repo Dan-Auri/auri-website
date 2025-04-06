@@ -1,0 +1,41 @@
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('https://cdn.shopify.com/s/files/1/0698/8706/6275/files/ChatGPT_Image_Apr_5_2025_at_02_49_05_PM.png?v=1743836104');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  background: rgba(0,0,0,0.7);
+  padding: 2em;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 1px 1px 2px black;
+}
+input, select, textarea, button {
+  display: block;
+  width: 100%;
+  margin: 0.5em 0;
+  padding: 0.8em;
+  border-radius: 6px;
+  border: none;
+}
+button {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+}
+h1 {
+  font-size: 2em;
+}
+.thanks {
+  font-size: 1.5em;
+  color: #fff;
+}
